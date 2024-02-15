@@ -5,9 +5,7 @@ This plugin provides e-mail obfuscation via field-methods to prevent spam bots f
 ## Credits
 First things first - I basically copied this plugin code from [seehat's post](https://forum.getkirby.com/t/email-obfuscate/4475/20) in the Kirby forum. Many thanks to him.
 
-## Installation
-
-### Composer
+## Installation via Composer
 ```
 composer require timnarr/kirby-obfuscate-email
 ```
@@ -21,7 +19,7 @@ If you want to obfuscate multiple e-mails in a text field you can use the `obfus
 ## Options
 | Option | Default | Type | Description |
 | ------ | ------- | ---- | ----------- |
-| `regex` | `/[A-Z0-9\._%+-]+(@)[A-Z0-9\.-]+(\.)[a-z]{2,}/i` | string | Regular expression, used to find e-mails in text. Change to your pattern if needed. |
+| `regex` | `/[A-Z0-9\._%+-]+(@)[A-Z0-9\.-]+(\.)[a-z]{2,}/i` | string | Regular expression, used to find e-mails in text. Change to custom pattern if needed. |
 
 ## License
 [MIT License](./LICENSE) Copyright © 2024-present Tim Narr
