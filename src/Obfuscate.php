@@ -26,8 +26,6 @@ class Obfuscate
 	public static function emailsInText(string $text): string
 	{
 		$regex = option('timnarr.obfuscate-email.regex');
-		$text = preg_replace_callback($regex, fn (array $matches): string => self::email($matches[0]), $text);
-
-		return $text;
+		return preg_replace_callback($regex, fn (array $matches): string => self::email($matches[0]), $text) ?? $text;
 	}
 }
