@@ -2,7 +2,6 @@
 	"name": "timnarr/kirby-obfuscate-email",
 	"description": "This plugin provides field methods to obfuscate email addresses.",
 	"type": "kirby-plugin",
-	"version": "0.1.0",
 	"license": "MIT",
 	"homepage": "https://github.com/timnarr/kirby-obfuscate-email",
 	"authors": [
