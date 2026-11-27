@@ -10,12 +10,12 @@ Kirby::plugin('timnarr/obfuscate-email', [
 	],
 	'fieldMethods' => [
 		'obfuscateEmail' => function ($field) {
-			$field->value = Obfuscate::email($field->value);
+			$field->value = Obfuscate::email((string)$field->value);
 
 			return $field;
 		},
 		'obfuscateEmails' => function ($field) {
-			$field->value = Obfuscate::emailsInText($field->value);
+			$field->value = Obfuscate::emailsInText((string)$field->value);
 
 			return $field;
 		},
